@@ -1,0 +1,22 @@
+<div id="header" role="banner">
+  <div id="header_top">
+    <div id="locale">
+      <span><a href="/zh-TW">中文</a></span>
+      <span><a href="/en">English</a></span>
+    </div>
+    <div id="logo">
+      <%= link_to image_tag("logo.png"), '/' %>
+    </div>
+    <h1>
+      <%= link_to t('sitename'), '/' %>
+    </h1>
+  </div>
+
+  <% cache [I18n.locale, 'main_menu', @page, Refinery::Page.fast_menu.map(&:updated_at).max] do %>
+    <%=
+      main_menu = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
+      main_menu.menu_role = 'navigation'
+      main_menu.to_html
+    %>
+  <% end %>
+</div>

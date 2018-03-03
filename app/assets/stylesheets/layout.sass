@@ -1,0 +1,265 @@
+body
+  margin: 0
+  padding: 0
+  font-family: Tahoma, Geneva, sans-serif
+  font-size: 15px
+  color: #444
+
+*
+  margin: 0
+  padding: 0
+
+p
+  line-height: 1.5em
+  margin-bottom: 20px
+
+a:hover
+  color: #f9692a
+
+a:focus
+  outline: none
+
+h1, h2, h3
+  font-family: Arial, Helvetica, sans-serif
+  letter-spacing: 0.5px
+  font-weight: bold
+  padding: 0px
+  margin: 10px 0px 10px 0px
+
+h1
+  font-size: 25px
+
+h2
+  font-size: 20px
+
+h3
+  font-size: 17px
+
+#page_container
+  margin: 0 auto
+  padding: 0
+  background: #fff
+
+#container-inner
+  width: 960px
+  margin: 0 auto
+  padding: 0
+  background: #fff
+
+#page
+  clear: both
+  margin-top: 20px
+
+.image-align-left
+  margin: 0px 20px 20px 0px
+  clear: left
+
+.image-align-right
+  margin: 0px 0px 20px 20px
+  clear: right
+
+
+/*----------- Header -----------------*/
+header
+  padding: 0
+  margin: 0
+  background-color: #fffdf3
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7)
+
+#header
+  width: 960px
+  margin: 0 auto
+
+  h1
+    padding: 20px 0px
+    margin: 0px
+
+    a
+      font-family: Georgia, "Times New Roman", Times, serif
+      color: #f9692a
+      font-size: 30px
+      font-weight: normal
+      text-decoration: none
+
+  p
+    color: #000
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 14px
+    font-weight: bold
+    margin-left: 12px
+    margin-top: 0px
+    padding-left: 8px
+    line-height: 12px
+
+#header_top
+  height: 80px
+
+#logo
+  float: left
+  padding: 5px 10px 0px 0px
+
+#locale
+  float: right
+  padding: 20px 10px 0px 0px
+
+  span
+    padding-left: 10px
+
+
+/*----------- Navigation -----------------*/
+#menu
+  height: 40px
+  width: 960px
+  z-index: 1000
+
+  ul
+    list-style: none
+    padding: 0 10px
+    margin: 0
+    height: 40px
+    z-index: 1000
+
+    li
+      float: left
+      display: block
+      padding: 0
+      z-index: 1000
+
+      a
+        color: #000
+        display: block
+        font-size: 14px
+        padding: 12px 10px
+        text-decoration: none
+
+        &:hover
+          color: #fff
+          background-color: #f9692a
+
+      &.selected
+        a
+          color: #f9692a
+        &:hover
+          a
+            color: #fff
+          background-color: #f9692a
+
+  li
+    z-index: 1000
+    ul
+      display: none
+      background-color: #f9692a
+      z-index: 1000
+
+    &:hover, &.hover
+      ul
+        display: block
+        position: absolute
+        margin: 0
+        padding: 0
+        z-index: 1000
+
+      li
+        float: none
+        z-index: 1000
+
+        a
+          background-color: #f9692a
+          color: #fff
+
+#menu li li a:hover, #menu li a:hover
+  background-color: #000
+
+
+/*----------- Footer -----------------*/
+footer
+  padding: 0
+  margin-top: 20px
+  background-color: #EEEEEE
+  border-top: 1px solid #d8d8d8
+
+#footer
+  padding: 30px 50px
+  width: 960px
+  color: #999
+  font-size: 12px
+  font-family: Arial, Helvetica, sans-serif
+  margin: 0 auto
+  display: block
+
+  a
+    color: #999
+
+  .address
+    display: block
+    float: right
+
+
+/*----------- Slideshow -----------------*/
+#slider
+  padding: 0
+  margin: 0 auto
+  width: 960px
+  height: 400px
+  flaot: left
+
+  #slideshow
+    float: left
+    margin: 0 0 10px 0
+    height: 100%
+    width: 100%
+
+  .controls-outer
+    margin-left: auto
+    margin-right: auto
+    float: left
+    margin-top: 15px
+
+    #slide_controls
+      float: right
+      padding: 0
+      position: relative
+      margin: 0
+      width: 960px
+
+      ul
+        margin: 0 auto
+        padding: 0
+        width: 200px
+        height: 20px
+
+        li
+          margin: 0
+          padding: 0
+          list-style: none
+          float: left
+          display: block
+          a
+            width: 14px
+            height: 14px
+            background-image: image-url('tabs_2.gif')
+            background-repeat: no-repeat
+            background-position: center center
+            display: block
+            float: left
+            padding: 2px
+            margin: 2px !important
+            margin: 1px 1px
+            outline: none
+
+            &:focus
+              outline: none
+            &:hover
+              background-image: image-url('tabs_1.gif')
+              background-repeat: no-repeat
+              background-position: center center
+
+          a.activeSlide
+            background-image: image-url('tabs_1.gif')
+            background-repeat: no-repeat
+            background-position: center center
+
+
+/*----------- others -----------------*/
+.clear-both
+  clear: both
