@@ -1,0 +1,11 @@
+- unless @page.images.blank?
+  = content_for :images do
+    #gallery
+      - @page.images.each_with_index do |image, index|
+        .gallery_item
+          = link_to image_tag(image.thumbnail(geometry: '90x90#c').url), |
+              image.thumbnail(geometry: "800x600").url, |
+              data: { lightbox: 'asf' }
+          =raw @page.caption_for_image_index(index)
+
+    .clear-both
