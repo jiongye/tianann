@@ -55,7 +55,7 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Refinery CMS
 gem 'refinerycms', '~> 4.0'
@@ -67,4 +67,4 @@ gem 'refinerycms-authentication-devise', '~> 2.0'
 #  gem 'refinerycms-blog', ['~> 4.0', '>= 4.0.0']
 #  gem 'refinerycms-inquiries', ['~> 4.0', '>= 4.0.0']
 #  gem 'refinerycms-search', ['~> 4.0', '>= 4.0.0']
-#  gem 'refinerycms-page-images', ['~> 4.0', '>= 4.0.0']
+gem 'refinerycms-page-images', ['~> 4.0', '>= 4.0.0']
