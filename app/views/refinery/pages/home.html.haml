@@ -1,0 +1,18 @@
+- unless @page.images.blank?
+  = content_for :images do
+    .cycle-slideshow{ 'data-cycle-pager': '.slider_nav', |
+      'data-cycle-pause-on-hover': 'true', |
+      'data-cycle-timeout': 3000 }
+      .cycle-overlay
+
+      - @page.images.each_with_index do |image, index|
+        = image_tag image.thumbnail(geometry: "960x400#c").url, data: { 'cycle-desc': @page.caption_for_image_index(index) }
+
+    .slider_nav
+
+    .slide-separator
+
+= yield :images
+
+#home
+  = render '/refinery/content_page'

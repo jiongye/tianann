@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require rails-ujs
-//= require turbolinks
 //= require lightbox
 //= require jquery.cycle2.min
 //= require_tree .
