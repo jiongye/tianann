@@ -4,4 +4,4 @@ en:
   description: "Description"
   other_activities: "Other Activities"
   sitename: "Tian Ann Temple"
-  copyright: "Copyright"
+  copyright: "Copyright © %{year} Tian Ann Temple"
